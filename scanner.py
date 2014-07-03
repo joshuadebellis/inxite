@@ -6,7 +6,6 @@ Created on Mon Jun 30 17:10:36 2014
 """
 import string
 class TextScanner(object):
-      wordsum = 0
       factorlist = {"one" : 1, "two" : 2, "three" : 3 , "four" : 4,
                 "five" : 5, "six" : 6, "seven" : 7, "eight" : 8, "nine" : 9 , "ten" : 10 ,"eleven" : 11,
                 "twelve" : 12, "thirteen" : 13, "fourteen" : 14, "fifteen" : 15, "sixteen" : 16 ,
@@ -31,22 +30,15 @@ class TextScanner(object):
               if word in self.factorlist:
                  temp_1 = self.factorlist[word]
                  numbersum = numbersum + temp_1
-                 print numbersum
-                 
-                 
-                 
                  
               elif word in self.powers_of_ten :
                   if numbersum == 0 :
                      numbersum = 1
                   temp_2 = self.powers_of_ten[word]
                   numbersum  = numbersum * temp_2
-                  print numbersum
-    
-
-                  
+          
           finalsum = numbersum
-           
+          return finalsum
                  
                   
                   
@@ -59,12 +51,9 @@ class TextScanner(object):
               
                  
                  
-          self.wordsum = finalsum
           
           
-      def displayresult(self):
-          print "The sum of the number words in this song is " + str(self.wordsum)
-          
+      
      
           
       
