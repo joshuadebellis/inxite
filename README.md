@@ -4,8 +4,9 @@ A solution for an interview puzzle from Inxite. The main script is inxiteintervi
 
 
 To sum the number words in a text of lyrics, call the .wordsum() method. To display the result, call .displayresult().
-======
+
 The Puzzle:
+=======
 
 How many letters?
 
