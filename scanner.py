@@ -31,6 +31,8 @@ class TextScanner(object):
               if word in self.factorlist:
                  temp_1 = self.factorlist[word]
                  numbersum = numbersum + temp_1
+                 print numbersum
+                 
                  
                  
                  
@@ -39,14 +41,12 @@ class TextScanner(object):
                      numbersum = 1
                   temp_2 = self.powers_of_ten[word]
                   numbersum  = numbersum * temp_2
+    
+
                   
+          finalsum = numbersum
+           
                  
-              else:
-                  finalsum += numbersum
-                  print finalsum
-                  numbersum = 0
-                  temp_1 = 0
-                  temp_2 = 0
                   
                   
                   
@@ -59,6 +59,7 @@ class TextScanner(object):
                  
                  
           self.wordsum = finalsum
+          
           
       def displayresult(self):
           print "The sum of the number words in this song is " + str(self.wordsum)
