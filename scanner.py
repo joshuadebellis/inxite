@@ -41,6 +41,7 @@ class TextScanner(object):
                      numbersum = 1
                   temp_2 = self.powers_of_ten[word]
                   numbersum  = numbersum * temp_2
+                  print numbersum
     
 
                   
