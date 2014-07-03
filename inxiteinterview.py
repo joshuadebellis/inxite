@@ -12,6 +12,7 @@ prompt = raw_input("Enter the name of the file to be scanned: ")
 
 
 song = TextScanner(prompt)
+print song.text
 song.wordsum()
 song.displayresult()
 

@@ -23,17 +23,26 @@ class TextScanner(object):
           self.text =  [word.strip(string.punctuation) for word in lyrics.split()]
     
       def wordsum(self):
-          factor = 0
+          temp_1 = 0
+          temp_2 = 0
           sum = 0
           for word in self.text:
               if word in self.factorlist:
-                 factor = self.factorlist[word]
+                 temp_1 = self.factorlist[word]
+                 sum = sum + temp_1
+                 print sum
+                 
                  
               if word in self.powers_of_ten :
-                 sum = sum + factor * self.powers_of_ten[word] - factor 
+                 temp_2 = self.powers_of_ten[word]
+                 sum  = sum * temp_2
+                 print sum
                  
-              else:
-                  sum = sum + factor
+              
+                  
+                 
+              
+                 
                  
           self.wordsum = sum
           
