@@ -30,14 +30,21 @@ class TextScanner(object):
               if word in self.factorlist:
                  temp_1 = self.factorlist[word]
                  numbersum = numbersum + temp_1
+                
                  
               elif word in self.powers_of_ten :
                   if numbersum == 0 :
                      numbersum = 1
                   temp_2 = self.powers_of_ten[word]
-                  numbersum  = numbersum * temp_2
+                  numbersum  = numbersum * temp_2 
+                 
           
-          finalsum = numbersum
+              else:
+                  finalsum = finalsum + numbersum
+                  numbersum = 0     
+           
+          finalsum = finalsum + numbersum    
+          
           return finalsum
                  
                   
