@@ -3,8 +3,7 @@ inxite Pre-Interview Puzzle
 A solution for an interview puzzle from Inxite, written with python 2.7. The main script is inxiteinterview.py which requires the module scanner.py. These files as well as a text of lyrics should all be in the same directory.
 
 
-To sum the number words in a text of lyrics, call the .wordsum() method. To display the result, call .displayresult().
-
+To sum the number words in a text of lyrics, call the .wordsum() method. 
 The Puzzle:
 =======
 
